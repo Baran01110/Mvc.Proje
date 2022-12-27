@@ -12,10 +12,10 @@ namespace Abc.MvcWebUI.Entity
         {
             var kategoriler = new List<Category>() 
             { 
-                new Category(){ Name = "Su", Description= "Su ürünleri"},
-                new Category(){ Name = "Kola", Description= "Kola ürünleri"},
+                new Category(){ Name = "Plastik", Description= "Plastik ürünleri"},
+                new Category(){ Name = "Cam", Description= "Cam ürünleri"},
                 new Category(){ Name = "Pil", Description= "Pil ürünleri"},
-                new Category(){ Name = "Elektronik Atık", Description= "Elektronik Atık ürünleri"}
+                new Category(){ Name = "Elektronik Atık", Description= "Elektronik Atık ürünleri"},
             };
             foreach (var kategori in kategoriler)
             {
@@ -25,14 +25,16 @@ namespace Abc.MvcWebUI.Entity
 
             var urunler = new List<Product>()
             {
-                new Product(){ Name="Hayat Su",Description = "Su ürünleri",Price = 777,Stock = 200,IsApproved=true,CategoryId = 1, IsHome=true },
-                
+                new Product(){ Name="Hayat Su",Description = "Plasitk ürünleri",Price = 110,Stock = 200,IsApproved=true,CategoryId = 1, IsHome=true,Image="hayatsu.png" },
+                new Product(){ Name="Damla Su",Description = "Plasitk ürünleri",Price = 110,Stock = 200,IsApproved=true,CategoryId = 1, IsHome=true,Image="hayatsu.png" },
+                new Product(){ Name="Hazır Gıda",Description = "Plasitk ürünleri",Price = 110,Stock = 200,IsApproved=true,CategoryId = 1, IsHome=true,Image="hayatsu.png" },
 
-                new Product(){ Name="Coca Cola",Description = "Kola ürünleri",Price = 555,Stock = 100,IsApproved=true,CategoryId= 2 , IsHome=true },
+                new Product(){ Name="Coca Cola Şişe",Description = "Cam ürünleri geri dönüştürülmesi gereken önemli atıklardan biridir. Bu ürünlerin barkodunu bize ileterek gerekli geri dönüşümü kolayca sağlayabilirsiniz ",Price = 17,Stock = 100,IsApproved=true,CategoryId= 2 , IsHome=true,Image="Coca-Cola.png"  },
+                new Product(){ Name="Su Şişe",Description = "Cam ürünleri ",Price = 17,Stock = 100,IsApproved=true,CategoryId= 2 , IsHome=true,Image="Coca-Cola.png"  },
 
-                new Product(){ Name="Kalem Pil",Description = "Pil ürünleri",Price = 555,Stock = 100,IsApproved=true,CategoryId=3, IsHome =true },
+                new Product(){ Name="Kalem Pil",Description = "Pil ürünleri",Price = 881,Stock = 100,IsApproved=true,CategoryId=3, IsHome =true,Image="kalempil.jpg"  },
 
-                new Product(){ Name="Bilgisayar",Description = "Elektronik Atık ürünleri",Price = 555,Stock = 100,IsApproved=true,CategoryId=4,IsHome = true }
+                new Product(){ Name="Bilgisayar",Description = "Elektronik Atık ürünleri",Price = 999,Stock = 100,IsApproved=true,CategoryId=4,Image="pc.png"  },
 
             };
             foreach (var urun in urunler)
